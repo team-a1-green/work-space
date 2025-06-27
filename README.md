@@ -71,6 +71,7 @@ HTML・CSS・Bootstrap・JavaScriptを使った、「おみくじWebアプリ」
 - **日本語でわかりやすく簡潔に書く**ことを基本とします。  
 - 何をしたのか、なぜしたのかが伝わるように記述してください。
 - Issueにリンクさせてコミットメッセージは書いてください。
+- Issue以外の修正は以下に記載しておきます。
 
 ### 例
 - `ユーザー登録画面のバリデーションを追加 #42`  
@@ -91,6 +92,14 @@ close, closes, closed
 resolve, resolves, resolved
 git commit -m "Fixes #42: 入力バリデーションを調整"
 この書き方で、Issue #42 はマージ時に「クローズ済み」になります。
+
+## 🔖 ブランチ命名ルール（Issueなし）
+
+| 種類       | 命名例                    | 説明                              |
+|------------|---------------------------|-----------------------------------|
+| `feature/` | `feature/add-header`      | 新しい機能や画面を追加する時     |
+| `docs/`    | `docs/update-readme`      | READMEやドキュメントの修正       |
+| `fix/`     | `fix/fix-button-style`    | バグ・不具合を修正する時         |
 
 Issueに関しては以下の記事を参考にしてください：
 [Issue管理の基本とコツ - Zenn](https://zenn.dev/mukkun69n/articles/a375062803b7c4)

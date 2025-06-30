@@ -63,7 +63,7 @@ const luckyMusic = [
 ];
 
 // ラッキーなゲームを返す
-const luckyGama = [
+const luckyGame = [
   "超高速餅つきシミュレーター", 
   "延々と畑を耕すだけのスローライフRPG", 
   "コマンド選択式・社内根回しアドベンチャー", 

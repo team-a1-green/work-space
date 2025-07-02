@@ -1,8 +1,17 @@
+// ------------------------
+// ユーティリティ関数
+// ------------------------
+
 // ランダムな数字を返す
 function getRandomElement(array) {
   const index = Math.floor(Math.random() * array.length);
   return array[index];
 }
+
+
+// ------------------------
+// データ定義
+// ------------------------
 
 // おみくじの運勢を返す
 const omikujiResult = [
@@ -89,3 +98,37 @@ const luckyWord = [
   "「笑っとけ」", 
   "「フラグ回避」"
 ];
+
+// ------------------------
+// メイン処理
+// ------------------------
+
+function drawOmikuji() {
+  // 大吉、中吉とかの結果を表示する定数
+  const fortune = getRandomElement(omikujiResult);
+  // 各ラッキー〇〇を表示するための定数
+  const music = getRandomElement(luckyMusic);
+  const game = getRandomElement(luckyGame);
+  const word = getRandomElement(luckyWord);
+
+  // HTMLのClassを指定して内容を代入(配列の[0]を使う)
+  document.getElementsByClassName("omikuji-luck")[0].textContent = fortune.result;
+  document.getElementsByClassName("omikuji-message")[0].textContent = fortune.comment;
+  document.getElementsByClassName("omikuji-lucky-music")[0].textContent = music;
+  document.getElementsByClassName("omikuji-lucky-game")[0].textContent = game;
+  document.getElementsByClassName("omikuji-lucky-word")[0].textContent = word;
+
+  // 表示切り替え
+  document.getElementsByClassName("omikuji-page")[0].classList.remove("d-none");
+}
+
+// ------------------------
+// イベント登録
+// ------------------------
+
+window.addEventListener("DOMContentLoaded" , function(){
+  const drawBtn = document.getElementsByClassName("draw-omikuji")[0];
+  if (drawBtn) {
+    drawBtn.addEventListener("click" , drawOmikuji);
+  }
+});

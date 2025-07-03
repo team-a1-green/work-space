@@ -131,4 +131,14 @@ window.addEventListener("DOMContentLoaded" , function(){
   if (drawBtn) {
     drawBtn.addEventListener("click" , drawOmikuji);
   }
+
+  const retryBtn = document.getElementsByClassName("retry-button")[0];
+  if (retryBtn) {
+    retryBtn.addEventListener("click" , function() {
+      // 結果画面を隠す
+      document.getElementsByClassName("omikuji-page")[0].classList.add("d-none");
+      // トップ画面を表示
+      document.getElementsByClassName("top-page")[0].classList.remove("d-none");
+    });
+  }
 });

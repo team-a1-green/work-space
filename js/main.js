@@ -120,6 +120,7 @@ function drawOmikuji() {
 
   // 表示切り替え
   document.getElementsByClassName("omikuji-page")[0].classList.remove("d-none");
+  document.getElementsByClassName("top-page")[0].classList.add("d-none");
 }
 
 // ------------------------

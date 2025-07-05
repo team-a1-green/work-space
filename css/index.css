@@ -8,6 +8,7 @@ body{
     sans-serif;
 }
 
+
 p {
   font-family: 'ぼくたちのゴシック', sans-serif;
 }
@@ -29,6 +30,10 @@ a:hover{
   color: black;
 }
 
+small{
+  font-size: 0.8em;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Varela+Round&display=swap');
     small, h4{
@@ -47,7 +52,7 @@ a:hover{
 
 /* Module */
 h1.title{
-  text-shadow: 2px 2px 0 rgba(24, 22, 22, 0.5) ,3px 3px 0 rgba(104, 86, 86, 0.9);
+  text-shadow: 1px 1px 0 rgba(24, 22, 22, 0.5) ,2px 2px 0 rgba(104, 86, 86, 0.9);
   font-family: "Nico Moji",
     "にくまるフォント",
     "コーポレート・ロゴ丸",

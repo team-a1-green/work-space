@@ -10,11 +10,11 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
     background-image:
-        url('../assets/imag/kana.png'),
-        url('../assets/imag/kabe.png'),
-        url('../assets/imag/kabe.png'),
-        url('../assets/imag/turu.png'),
-        url('../assets/imag/turu.png');
+        url('../assets/images/kana.png'),
+        url('../assets/images/kabe.png'),
+        url('../assets/images/kabe.png'),
+        url('../assets/images/turu.png'),
+        url('../assets/images/turu.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position:
         top 0px left 580px,

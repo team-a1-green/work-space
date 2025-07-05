@@ -19,12 +19,6 @@ HTML・CSS・Bootstrap・JavaScriptを使った、「おみくじWebアプリ」
 ---
 
 
-
-## 🚀 セットアップ方法
-
-1. このリポジトリをクローン
-
-
 ---
 ## 🛠 命名規則 & 開発ルール
 
@@ -104,7 +98,8 @@ git commit -m "ナビゲーションバーのコンポーネントを追加 #42"
 
 Issueに関しては以下の記事を参考にしてください：
 [Issue管理の基本とコツ - Zenn](https://zenn.dev/mukkun69n/articles/a375062803b7c4)
-# 📂ディレクトリ構成(仮)
+
+# 📂ディレクトリ構成
 
 ```
 word-space/
@@ -133,11 +128,5 @@ word-space/
 - Bootstrapによるレスポンシブ対応
 ---
 
-
-
----
-
 # 🌐 公開URL（GitHub Pages）
 > （後で設定）
-
-

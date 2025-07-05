@@ -17,17 +17,17 @@ body {
         url('../assets/imag/turu.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position:
-        top 0px left 580px, /* PC: 画像1の位置 */
-        top right,          /* PC: 画像2の位置 */
-        bottom left,        /* PC: 画像3の位置 */
-        top 200px right 1100px, /* PC: 画像4の位置 */
-        bottom 100px right 0px; /* PC: 画像5の位置 */
+        top 0px left 580px,
+        top right,
+        bottom left,
+        top 200px right 1100px,
+        bottom 100px right 0px;
     background-size:
-        200px auto, /* PC: 画像1のサイズ */
-        300px auto, /* PC: 画像2のサイズ */
-        300px auto, /* PC: 画像3のサイズ */
-        300px auto, /* PC: 画像4のサイズ */
-        300px auto; /* PC: 画像5のサイズ */
+        200px auto,
+        300px auto,
+        300px auto,
+        300px auto,
+        300px auto;
 }
 
 h1 {
@@ -105,14 +105,14 @@ footer {
 @media screen and (max-width: 767px) {
     body {
         background-position:
-            top 10px left 10px, /* 画像1: 左上に移動 */
+            top 10px left 10px,
             top right,
             bottom left,
-            top 50px right 20px, /* 画像4: 右からの距離を小さく */
+            top 50px right 20px,
             bottom 20px right 0px;
         background-size:
-            100px auto, /* 画像1を小さく */
-            150px auto, /* 画像2を小さく */
+            100px auto,
+            150px auto,
             150px auto,
             150px auto,
             150px auto;
@@ -155,15 +155,14 @@ footer {
 
 @media screen and (max-width: 479px) {
     body {
-        /* 変更点: ご提供いただいた background-position の値に修正 */
         background-position:
-            top 90px left 70px, /* さらに端に寄せる */
+            top 90px left 70px,
             top right,
             bottom left,
-            top 300px left 10px, /* さらに調整 */
+            top 300px left 10px,
             bottom 10px right 0px;
         background-size:
-            80px auto, /* さらに小さく */
+            80px auto,
             120px auto,
             120px auto,
             120px auto,

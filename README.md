@@ -23,8 +23,6 @@ HTML・CSS・Bootstrap・JavaScriptを使った、「おみくじWebアプリ」
 ## 🚀 セットアップ方法
 
 1. このリポジトリをクローン
-```bash
-```
 
 
 ---
@@ -106,10 +104,15 @@ Issueに関しては以下の記事を参考にしてください：
 # 📂ディレクトリ構成(仮)
 
 ```
-omikuji-system/
-├── index.html              # メインHTML
+word-space/
+├── html
+│   └── index.html              # メインHTML
+│   └── developer.html          # 製作者ページ
+│   └── about.html              # その他ページ
 ├── css/
-│   └── style.css           # カスタムスタイル
+│   └── index.css              # メインCSS
+│   └── developer.css          # 製作者ページCSS
+│   └── about.css              # その他CSS
 ├── js/
 │   └── main.js             # JavaScriptロジック
 ├── assets/
@@ -126,9 +129,7 @@ omikuji-system/
 
 # ✨主な機能
 
-- おみくじ（運勢＋コメント＋ラッキーな言葉）
-- ラッキーアイテムの表示（ランダム）
-- ラッキーな場所の表示（ランダム）
+- おみくじ（運勢＋コメント＋ラッキーな言葉＋音楽＋ゲーム）
 - もう一度引ける機能
 - Bootstrapによるレスポンシブ対応
 
@@ -138,18 +139,7 @@ omikuji-system/
 
 
 
-
-
-# 📋 開発中のタスク一覧
-(Issueと連携したい)
-
-
-
-
 ---
-
-
-
 
 # 🌐 公開URL（GitHub Pages）
 > （後で設定）

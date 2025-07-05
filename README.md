@@ -16,8 +16,6 @@ HTML・CSS・Bootstrap・JavaScriptを使った、「おみくじWebアプリ」
 | 👥 開発メンバー | sasami komisinn kin-sk  |
 | 🛠 技術構成 | HTML / CSS / Bootstrap / JavaScript |
 
----
-
 
 ---
 ## 🛠 命名規則 & 開発ルール
@@ -81,9 +79,15 @@ git commit -m "ナビゲーションバーのコンポーネントを追加 #42"
 
 以下のキーワードのいずれかを使い、`#Issue番号` を続けて書くと、**そのコミットがデフォルトブランチにマージされたときにIssueが自動でクローズ**されます。
 
-- `fix`, `fixes`, `fixed`
-- `close`, `closes`, `closed`
-- `resolve`, `resolves`, `resolved`
+- `fix`
+- `fixes`
+- `fixed`
+- `close`
+- `closes`
+- `closed`
+- `resolve`
+- `resolves`
+- `resolved`
 
 ---
 
@@ -104,19 +108,30 @@ Issueに関しては以下の記事を参考にしてください：
 ```
 word-space/
 ├── html
-│   └── index.html              # メインHTML
-│   └── developer.html          # 製作者ページ
-│   └── about.html              # その他ページ
+│   └── index.html          # メインHTML
+│   └── developer.html      # 製作者ページ
+│   └── about.html          # 概要ページ
 ├── css/
-│   └── index.css              # メインCSS
-│   └── developer.css          # 製作者ページCSS
-│   └── about.css              # その他CSS
+│   └── index.css           # メインCSS
+│   └── developer.css       # 製作者ページCSS
+│   └── about.css           # 概要CSS
 ├── js/
 │   └── main.js             # JavaScriptロジック
 ├── assets/
 │   └── images/             # 画像等
 └── README.md               # このファイル
 ```
+
+# 📋 開発中のタスク一覧
+
+#2 [Canvaでデザインの作成]([https://github.com/team-a1-green/work-space/issues/2)  
+#3 [おみくじのデータ構造を定義する]([https://github.com/team-a1-green/work-space/issues/3)  
+#4 [おみくじ画面の基本レイアウト（HTML）を作成する]([https://github.com/team-a1-green/work-space/issues/4)  
+#6 [ランダム抽選の関数を実装する]([https://github.com/team-a1-green/work-space/issues/6)  
+#8 [Bootstrap、CSSを導入して見た目を整える]([https://github.com/team-a1-green/work-space/issues/8)  
+#9 [ボタンを押すと結果を表示する処理を作る]([https://github.com/team-a1-green/work-space/issues/9)  
+#10 [「もう一度引く」ボタンを実装する]([https://github.com/team-a1-green/work-space/issues/10)  
+#18 [トップページからおみくじページに切り替わらない(bug)]([https://github.com/team-a1-green/work-space/issues/18)
 
 
 

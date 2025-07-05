@@ -3,9 +3,9 @@ body {
     color: black;
     font-family: sans-serif;
     margin: 0;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
@@ -17,77 +17,189 @@ body {
         url('../assets/imag/turu.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position:
-        top 0px left 560px,
-        top right,
-        bottom left,
-        top 200px right 900px,
-        bottom 100px right 0px;
+        top 0px left 580px, /* PC: 画像1の位置 */
+        top right,          /* PC: 画像2の位置 */
+        bottom left,        /* PC: 画像3の位置 */
+        top 200px right 1100px, /* PC: 画像4の位置 */
+        bottom 100px right 0px; /* PC: 画像5の位置 */
     background-size:
-        200px auto,
-        300px auto,
-        300px auto,
-        300px auto,
-        300px auto;
+        200px auto, /* PC: 画像1のサイズ */
+        300px auto, /* PC: 画像2のサイズ */
+        300px auto, /* PC: 画像3のサイズ */
+        300px auto, /* PC: 画像4のサイズ */
+        300px auto; /* PC: 画像5のサイズ */
 }
 
 h1 {
     text-align: center;
     color: black;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-size: 2.5em;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 3em;
+    letter-spacing: 0.1em;
 }
 
 ul {
-    padding: 0;
-    margin: 0 20px 40px;
-    max-width: 600px;
+    list-style-type: disc;
+    list-style-position: inside; 
+    padding-left: 1.5em;
+    margin: 0 auto 50px;
+    max-width: 700px;
     text-align: center;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 li {
-    margin-bottom: 55px;
-    line-height: 1.6;
-    font-size: 1.5em;
+    margin-bottom: 65px;
+    line-height: 1.8;
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
 }
 
 li a {
     color: black;
     text-decoration: none;
     display: inline-block;
+    letter-spacing: 0.05em;
 }
 
 li a:hover {
     color: #555555;
 }
 
-button {
-    background-color: #000000;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1em;
+.original-button-style {
+    background-color: #000000 !important;
+    color: white !important;
+    padding: 15px 30px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-size: 1.3em !important;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: auto;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.08em;
 }
 
-button:hover {
-    background-color: #333333;
+.original-button-style:hover {
+    background-color: #333333 !important;
 }
 
 footer {
     margin-top: auto;
-    padding-top: 20px;
-    font-size: 0.8em;
+    padding-top: 25px;
+    font-size: 1em;
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-position:
+            top 10px left 10px, /* 画像1: 左上に移動 */
+            top right,
+            bottom left,
+            top 50px right 20px, /* 画像4: 右からの距離を小さく */
+            bottom 20px right 0px;
+        background-size:
+            100px auto, /* 画像1を小さく */
+            150px auto, /* 画像2を小さく */
+            150px auto,
+            150px auto,
+            150px auto;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        letter-spacing: 0.08em;
+    }
+
+    ul {
+        padding-left: 1.5em;
+        margin: 0 auto 35px;
+        max-width: none;
+    }
+
+    li {
+        margin-bottom: 40px;
+        font-size: 1.5em;
+        letter-spacing: 0.04em;
+    }
+
+    li a {
+        letter-spacing: 0.04em;
+    }
+
+    .original-button-style {
+        padding: 12px 25px !important;
+        font-size: 1.1em !important;
+        letter-spacing: 0.06em;
+    }
+
+    footer small {
+        font-size: 0.8em;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        /* 変更点: ご提供いただいた background-position の値に修正 */
+        background-position:
+            top 90px left 70px, /* さらに端に寄せる */
+            top right,
+            bottom left,
+            top 300px left 10px, /* さらに調整 */
+            bottom 10px right 0px;
+        background-size:
+            80px auto, /* さらに小さく */
+            120px auto,
+            120px auto,
+            120px auto,
+            120px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        letter-spacing: 0.06em;
+    }
+
+    ul {
+        padding-left: 1em;
+        margin: 0 auto 30px;
+    }
+
+    li {
+        margin-bottom: 30px;
+        font-size: 1.2em;
+        letter-spacing: 0.03em;
+    }
+
+    li a {
+        letter-spacing: 0.03em;
+    }
+
+    .original-button-style {
+        padding: 10px 20px !important;
+        font-size: 1em !important;
+        letter-spacing: 0.05em;
+    }
+
+    footer small {
+        font-size: 0.7em;
+        letter-spacing: 0.01em;
+    }
 }

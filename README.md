@@ -83,13 +83,16 @@ HTML・CSS・Bootstrap・JavaScriptを使った、「おみくじWebアプリ」
 git commit -m "ナビゲーションバーのコンポーネントを追加 #42"
 
 ### Issueリンク（自動クローズあり）
-Issueを自動でクローズしたい場合は、以下のキーワードと #番号 を使います。
-コミットがデフォルトブランチにマージされた際に自動でIssueが閉じられます。
-fix, fixes, fixed  
-close, closes, closed  
-resolve, resolves, resolved
-git commit -m "Fixes #42: 入力バリデーションを調整"
-この書き方で、Issue #42 はマージ時に「クローズ済み」になります。
+#### 🔧 使用できるキーワード
+
+以下のキーワードのいずれかを使い、`#Issue番号` を続けて書くと、**そのコミットがデフォルトブランチにマージされたときにIssueが自動でクローズ**されます。
+
+- `fix`, `fixes`, `fixed`
+- `close`, `closes`, `closed`
+- `resolve`, `resolves`, `resolved`
+
+---
+
 
 ## 🔖 ブランチ命名ルール（Issueなし）
 
@@ -123,18 +126,11 @@ word-space/
 
 
 ---
-
-
-
-
 # ✨主な機能
 
 - おみくじ（運勢＋コメント＋ラッキーな言葉＋音楽＋ゲーム）
 - もう一度引ける機能
 - Bootstrapによるレスポンシブ対応
-
-
-
 ---
 
 

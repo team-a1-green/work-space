@@ -7,14 +7,9 @@ body {
         "ロンドBスカッシュ",
         sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    box-sizing: border-box;
-
-   
+    box-sizing: border-box;   
 }
 
 h1 {
@@ -22,29 +17,16 @@ h1 {
     color: black;
     margin-top: 60px;
     margin-bottom: 40px;
-    font-size: 2.5em;
     letter-spacing: 0.1em;
 }
 
 ul {
-    text-align: left;
-    list-style-type: disc;
-    list-style-position: inside; 
     padding-left: 1.5em;
     margin: 0 auto 50px;
-    max-width: 700px;
     text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
 }
-
 li {
     margin-bottom: 65px;
-    line-height: 1.8;
-    font-size: 1.5em;
     letter-spacing: 0.05em;
 }
 
@@ -85,14 +67,10 @@ li a:hover {
     background-color: #222 !important;
 }
 
-footer {
-    margin-top: auto;
-    padding-top: 25px;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Varela+Round&display=swap');
+    small, h4{
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
 
 @media screen and (min-width: 300px) {
     .line-break {

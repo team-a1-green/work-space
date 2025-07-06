@@ -1,93 +1,191 @@
 body {
-    background-color: #e28e53;
+    background-color: #dc8d57;
     color: black;
-    font-family: sans-serif;
+    font-family: "Nico Moji",
+        "にくまるフォント",
+        "コーポレート・ロゴ丸",
+        "ロンドBスカッシュ",
+        sans-serif;
     margin: 0;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
-    background-image:
-        url('../assets/imag/kana.png'),
-        url('../assets/imag/kabe.png'),
-        url('../assets/imag/kabe.png'),
-        url('../assets/imag/turu.png'),
-        url('../assets/imag/turu.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position:
-        top 0px left 560px,
-        top right,
-        bottom left,
-        top 200px right 900px,
-        bottom 100px right 0px;
-    background-size:
-        200px auto,
-        300px auto,
-        300px auto,
-        300px auto,
-        300px auto;
+
+   
 }
 
 h1 {
     text-align: center;
     color: black;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     font-size: 2.5em;
+    letter-spacing: 0.1em;
 }
 
 ul {
-    padding: 0;
-    margin: 0 20px 40px;
-    max-width: 600px;
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside; 
+    padding-left: 1.5em;
+    margin: 0 auto 50px;
+    max-width: 700px;
     text-align: center;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 li {
-    margin-bottom: 55px;
-    line-height: 1.6;
+    margin-bottom: 65px;
+    line-height: 1.8;
     font-size: 1.5em;
+    letter-spacing: 0.05em;
 }
 
 li a {
     color: black;
     text-decoration: none;
     display: inline-block;
+    letter-spacing: 0.05em;
 }
 
 li a:hover {
     color: #555555;
 }
 
-button {
-    background-color: #000000;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1em;
-    cursor: pointer;
+.btn-fortune {
+    font-family: "Nico Moji",
+        "にくまるフォント",
+        "コーポレート・ロゴ丸",
+        "ロンドBスカッシュ",
+        sans-serif;
+    border-radius: 19mm;
+    box-shadow: none;
+    padding: 0.4rem 3rem;
+    background-color: #000;
+    color: #fff;
     transition: background-color 0.3s ease;
+    
+    letter-spacing: 0.08em;
+    font-size: 1.3em;
     margin-top: auto;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button:hover {
-    background-color: #333333;
+.btn-fortune:hover {
+    background-color: #222 !important;
 }
 
 footer {
     margin-top: auto;
-    padding-top: 20px;
-    font-size: 0.8em;
+    padding-top: 25px;
+    font-size: 1em;
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
+}
+
+@media screen and (min-width: 300px) {
+    .line-break {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        letter-spacing: 0.08em;
+    }
+
+    ul {
+        text-align: left;
+        padding-left: 1.5em;
+        margin: 0 auto 35px;
+        max-width: none;
+    }
+
+    li {
+        margin-bottom: 40px;
+        font-size: 1.5em;
+        letter-spacing: 0.04em;
+    }
+
+    li a {
+        letter-spacing: 0.04em;
+    }
+
+    .btn-fortune {
+        padding: 0.4rem 3rem !important;
+        font-size: 1.1em !important;
+        letter-spacing: 0.06em;
+        margin-bottom: 0;
+    }
+
+    footer small {
+        font-size: 0.8em;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        letter-spacing: 0.06em;
+    }
+
+    ul {
+        text-align: left;
+        padding-left: 1em;
+        margin: 0 auto 30px;
+    }
+
+    li {
+        margin-bottom: 30px;
+        font-size: 1.2em;
+        letter-spacing: 0.03em;
+    }
+
+    li a {
+        letter-spacing: 0.03em;
+    }
+
+    .btn-fortune {
+        padding: 0.4rem 3rem !important;
+        font-size: 1em !important;
+        letter-spacing: 0.05em;
+        margin-bottom: 0;
+    }
+
+    footer small {
+        font-size: 0.7em;
+        letter-spacing: 0.01em;
+    }
+}
+
+@font-face {
+    font-family: 'ぼくたちのゴシック';
+    src: url('https://cdn.leafscape.be/boku/bokutachi_web.woff2') format('woff2');
 }

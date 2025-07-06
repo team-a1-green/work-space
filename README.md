@@ -107,8 +107,8 @@ Issueに関しては以下の記事を参考にしてください：
 
 ```
 word-space/
+├──index.html          # メインHTML
 ├── html
-│   └── index.html          # メインHTML
 │   └── developer.html      # 製作者ページ
 │   └── about.html          # 概要ページ
 ├── css/

@@ -142,6 +142,3 @@ word-space/
 - もう一度引ける機能
 - Bootstrapによるレスポンシブ対応
 ---
-
-# 🌐 公開URL（GitHub Pages）
-> （後で設定）
